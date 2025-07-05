@@ -136,7 +136,7 @@ BEGIN
 
 	--Retornamos el resultado del rendimiento de la generación.
 	DBMS_OUTPUT.PUT_LINE('Rendimiento de la generación del XML (Milisegundos): ' || n_diff_ms|| ' tamaño del documento (Kb): '||ROUND(DBMS_LOB.GETLENGTH(v_clob) / 1024, 3)||' '||
-	'Numero de lineas: '||(DBMS_LOB.GETLENGTH(v_clob)- DBMS_LOB.GETLENGTH(REPLACE(v_clob, CHR(10), ''))) 
+	'Numero de líneas: '||(DBMS_LOB.GETLENGTH(v_clob)- DBMS_LOB.GETLENGTH(REPLACE(v_clob, CHR(10), ''))) 
 	);
 	
 	--liberamos el clob de la memoria
